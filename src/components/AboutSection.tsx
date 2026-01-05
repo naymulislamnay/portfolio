@@ -9,7 +9,7 @@ export default function AboutSection() {
   const handleResumeDownload = async (e: React.MouseEvent) => {
     e.preventDefault();
     setIsDownloading(true);
-    
+
     try {
       await downloadResume();
       // Add a small delay to show the loading state
@@ -33,16 +33,16 @@ export default function AboutSection() {
           <div className="w-1 h-1 bg-purple-500 rounded-full mx-auto mt-4 mb-2"></div>
           <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500">More About Me</span>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500 to-purple-600 rounded-full blur-[60px] opacity-20 animate-pulse"></div>
               <div className="relative w-full h-full bg-gradient-to-b from-purple-900/30 to-black rounded-full border border-white/10 flex items-center justify-center overflow-hidden">
-                <img 
-                  alt="MD. Naymul Islam - MERN Stack Developer" 
+                <img
+                  alt="MD. Naymul Islam - MERN Stack Developer"
                   className="w-full h-full object-cover rounded-full"
-                  src="https://i.ibb.co.com/kTntb88/portfolio-banner-image.png"
+                  src="https://i.ibb.co.com/DDzRZw83/portfolio-image.png"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
@@ -65,7 +65,7 @@ export default function AboutSection() {
               </div>
             </div>
           </div>
-          
+
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold">
               Hey! I&apos;m <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-orange-400">NAYMUL</span>
@@ -76,7 +76,7 @@ export default function AboutSection() {
             <p className="text-gray-400 leading-relaxed text-sm">
               I&apos;m passionate about building user-centric applications with clean code and modern technologies. Currently expanding my expertise in cloud technologies and DevOps practices. Open to exciting full-time and freelance opportunities.
             </p>
-            
+
             <div className="space-y-3 pt-2">
               <h4 className="text-sm font-semibold text-white">What I Do</h4>
               <div className="flex flex-wrap gap-15 ml-6">
@@ -90,7 +90,7 @@ export default function AboutSection() {
                 </span>
               </div>
             </div>
-            
+
             <div className="space-y-3 pt-2">
               <h4 className="text-sm font-semibold text-white">Connect With Me</h4>
               <div className="flex items-center space-x-4">
@@ -111,16 +111,15 @@ export default function AboutSection() {
                 </a>
               </div>
             </div>
-            
+
             <div className="pt-4">
-              <button 
+              <button
                 onClick={handleResumeDownload}
                 disabled={isDownloading}
-                className={`inline-flex items-center text-white px-2 py-1 ml-6 rounded-full text-[10px] font-medium transition-all transform group cursor-hover ${
-                  isDownloading 
-                    ? 'bg-gray-600 cursor-not-allowed' 
+                className={`inline-flex items-center text-white px-2 py-1 ml-6 rounded-full text-[10px] font-medium transition-all transform group cursor-hover ${isDownloading
+                    ? 'bg-gray-600 cursor-not-allowed'
                     : 'bg-gradient-to-r from-purple-600 to-orange-500 hover:shadow-lg hover:shadow-purple-500/20 hover:-translate-y-1'
-                }`}
+                  }`}
               >
                 {isDownloading ? (
                   <>
