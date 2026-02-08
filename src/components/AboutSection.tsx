@@ -129,7 +129,7 @@ export default function AboutSection() {
                 ) : (
                   <>
                     <i className="fas fa-download mr-2 group-hover:animate-bounce"></i>
-                    Download Resume
+                    Download My Resume
                   </>
                 )}
               </button>

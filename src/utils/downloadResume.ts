@@ -2,7 +2,8 @@ export const downloadResume = (): Promise<void> => {
   return new Promise((resolve, reject) => {
     try {
       // Google Drive direct download link
-      const resumeUrl = 'https://drive.google.com/uc?export=download&id=1EpXrXdF0BS4eBmLhbn5wUXQLRtIa39Ih';
+      const resumeUrl = 'https://drive.google.com/uc?export=download&id=1Qvnf32502vIdOXBl2vu3tAHOJUcGWQxR';
+      // https://drive.google.com/file/d/1Qvnf32502vIdOXBl2vu3tAHOJUcGWQxR/view?usp=drivesdk
       
       // Create a temporary anchor element to trigger download
       const link = document.createElement('a');
